@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+function addLanguage(langName){
+    const li = document.createElement('li');
+    li.innerHTML  =`${langName}`
+    document.querySelector(".language").appendChild(li)  
+}
+addLanguage("python")
+addLanguage("Cpp")
+addLanguage("TypeScript")
+addLanguage("goland")
+
+// function addOptimalLang(langName){
+//     const li = document.querySelector('li');
+//     li.appendChild(document.createTextNode(langName))
+//     document.querySelector(".language").appendChild(li)
+// }
+// addOptimalLang('goland')
+
+
+//Edit 
+ const secndlang = document.querySelector("li:nth-child(2)");
+// secndlang.innerHTML = "arisha"
+
+const newwli = document.createElement('li');
+newwli.textContent="mojo"
+secndlang.replaceWith(newwli)
+
+
+//remove
+const LastLang = document.querySelector("li:nth-child(2)")
+LastLang.remove()
+
+
+
+
+</script>
+</html>
